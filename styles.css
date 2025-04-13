@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 237, 134);
+    text-align: center;
+}
+.container {
+    margin: 80px auto 0 auto;
+    width: 50%;
+}
+h1{
+    color:rgb(240, 132, 16);
+    margin-bottom: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 42px;
+    
+}
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+
+#text-id {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    resize: vertical;
+    
+}
+
+.box-container {
+    padding: 20px;
+    background-color: #fffbe6;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+button{
+    
+        width: 100%;
+        max-width: 200px;
+        padding: 12px;
+        background-color: orangered;
+        color: aliceblue;
+        border: none;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(251, 176, 14);
+    color:black;
+}
+.glitter {
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ff00cc, #3333ff, #ffcc00, #ff00cc);
+    background-size: 400% 400%;
+    animation: glitter 5s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes glitter {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+  @media  (max-width : 600px) {
+    .container{
+        padding:40px;
+    }
+    textarea{
+        font-size: 0.95rem;
+    }
+    button{
+        width: 100%;
+    }
+  }  
+
